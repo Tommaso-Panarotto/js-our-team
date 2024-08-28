@@ -42,9 +42,9 @@ for (let employee of employees) {
 let list = '';
 for (let employee of employees) {
     list += `
+    la sua foto è: <img src="img/${employee.photo}" alt="profile of ${employee.name}">
     il nome è:                 ${employee.name} 
-    il suo ruolo in azienda è: ${employee.role} 
-    la sua foto è:             ${employee.photo}
-    ----------------------------------------------`
+    il suo ruolo in azienda è: ${employee.role}<br>
+    `
 }
-main.innerText = list;
+main.innerHTML = list;
