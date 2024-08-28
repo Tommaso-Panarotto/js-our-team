@@ -14,7 +14,7 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
 
 //creo array con i dati forniti
-const employee = [
+const employees = [
     { name: 'Wayne Barnett', role: 'Founder & CEO', photo: 'wayne-barnett-founder-ceo.jpg' },
     { name: 'Angela Caroll', role: 'Chief Editor', photo: 'angela-caroll-chief-editor.jpg' },
     { name: 'Walter Gordon', role: 'Office Manager', photo: 'walter-gordon-office-manager.jpg' },
@@ -22,3 +22,11 @@ const employee = [
     { name: 'Scott Estrada', role: 'Developer', photo: 'scott-estrada-developer.jpg' },
     { name: 'Barbara Ramos', role: 'Graphic Designer', photo: 'barbara-ramos-graphic-designer.jpg' },
 ];
+
+//stampo in conole i dati
+for (let employee of employees) {
+    console.log(`
+    il nome è:                 ${employee.name} 
+    il suo ruolo in azienda è: ${employee.role} 
+    la sua foto è:             ${employee.photo}`)
+}
