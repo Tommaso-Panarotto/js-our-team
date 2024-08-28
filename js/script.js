@@ -15,7 +15,7 @@ Ogni membro è caratterizzato dalle seguenti informazioni: nome, ruolo e foto.
 
 //FASE PREPARATORIA
 //recupero gli elementi dal DOM
-const main = document.querySelector('main');
+const plates = document.querySelector('.row');
 
 //creo array con i dati forniti
 const employees = [
@@ -42,9 +42,14 @@ for (let employee of employees) {
 let list = '';
 for (let employee of employees) {
     list += `
-    la sua foto è: <img src="img/${employee.photo}" alt="profile of ${employee.name}">
-    il nome è:                 ${employee.name} 
-    il suo ruolo in azienda è: ${employee.role}<br>
+    <div class="col">
+    <img src="img/${employee.photo}" alt="profile of ${employee.name}">
+      <div class="card-description">
+        <span>${employee.name}</span>
+        <p>${employee.role}</p>
+      </div>
+    </div>
     `
 }
-main.innerHTML = list;
+
+plates.innerHTML = list;

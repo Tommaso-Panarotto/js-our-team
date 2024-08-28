@@ -1,12 +1,36 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/*Generics*/
+body {
+    background-color: #F5F5F1;
+    text-align: center;
 }
 
-/* Utils */
-.container {
-    max-width: 1200px;
+img {
+    width: 100%;
+}
+
+p {
+    margin: 0;
+    color: #78736C;
+}
+
+span {
+    font-size: 25px;
+    color: #67615A;
+}
+
+/*presentation*/
+.presentation {
+    width: 70%;
     margin: 0 auto;
+}
+
+/*card*/
+.col {
+    flex-basis: calc(100% / 3 - 3rem);
+    background-color: white;
+    padding: 0;
+}
+
+.card-description {
+    margin: 20px 0;
 }
